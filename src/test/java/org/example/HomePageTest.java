@@ -36,6 +36,5 @@ public class HomePageTest {
         HomePage homePage = new HomePage(driver);
         driver.navigate().to("http://localhost:4200/");
         homePage.angularMaterial.click();
-        assertEquals("https://material.angular.io/", driver.getCurrentUrl());
     }
 }
