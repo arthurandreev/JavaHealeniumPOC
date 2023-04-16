@@ -32,7 +32,7 @@ Just clone down the code here or create your own Selenium Maven Java project.
 For setup steps that I followed to set it up, please see this link - https://github.com/healenium/healenium-web
 
 # DEMO 
-Use case - the link text that my navigateToAngularMaterialPageTest is using to click on the button that takes me to a new tab has been changed and this will normally make my test fail with no element found exception  
+Use case - the id that my navigateToAngularMaterialPageTest is using to click on the button that takes me to a new tab has been changed and this will normally make my test fail with no element found exception. The web element itself hasn't changed but because the id has been changed it will make the tests that rely on it to fail resulting in false positive failed tests.  
 My element under test
 ![image](https://user-images.githubusercontent.com/35194143/232344213-9ce1400a-9831-489c-a305-24fcf28f765c.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232344239-8f48cc08-cf7b-4a97-a828-f43cc3b615a3.png)  
