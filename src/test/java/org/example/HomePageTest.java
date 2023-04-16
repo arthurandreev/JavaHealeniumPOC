@@ -20,8 +20,8 @@ public class HomePageTest extends BaseTest {
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
         wait.until(ExpectedConditions.urlContains("material.angular.io/"));
-        String expectedTitle = "Angular Material UI component library";
-        String actualTitle = driver.getTitle();
-        Assert.assertEquals(expectedTitle, actualTitle);
+        String expectedPageTitle = "Angular Material UI component library";
+        String actualPageTitle = driver.getTitle();
+        Assert.assertEquals(expectedPageTitle, actualPageTitle);
     }
 }
