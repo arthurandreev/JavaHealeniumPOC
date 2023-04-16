@@ -9,7 +9,7 @@ public class HomePage {
 
     private SelfHealingDriver driver;
 
-    @FindBy(linkText = "Angular Material")
+    @FindBy(id = "angular-material")
     public WebElement angularMaterial;
 
     public HomePage(SelfHealingDriver driver) {
