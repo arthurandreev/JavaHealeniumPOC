@@ -41,7 +41,11 @@ My test case
 ![image](https://user-images.githubusercontent.com/35194143/232348050-ba46a18c-b1c5-4926-a6e6-ec939c1c648f.png)  
 
 Test run 1 with matching locator(#angular-material) in the angular project and in the selenium project that makes the test pass
-![image](https://user-images.githubusercontent.com/35194143/232344657-25a1ea69-b5e4-473e-b17b-65767be4fca9.png)
+![image](https://user-images.githubusercontent.com/35194143/232344657-25a1ea69-b5e4-473e-b17b-65767be4fca9.png)  
+Angular
+![image](https://user-images.githubusercontent.com/35194143/232348107-a8fbc511-9e97-42f9-b75f-341498dee22a.png)  
+Selenium  
+![image](https://user-images.githubusercontent.com/35194143/232348144-aa9ecc7f-3f5f-4081-8018-e1102da6953b.png)  
 
 Test run 2 with a non matching locator in the angular project and in the selenium project and self healing capability switched off. This makes my test fail with no such element exception.
 Id is changed in the Angular project from #angular-material to #react=material
