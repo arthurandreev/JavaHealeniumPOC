@@ -15,6 +15,7 @@ public class BaseTest {
     static void setupClass(){
         WebDriverManager.chromedriver().setup();
     }
+
     @BeforeEach
     protected void setupTest() {
         WebDriver delegate = new ChromeDriver();
