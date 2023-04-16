@@ -38,21 +38,16 @@ My element under test
 ![image](https://user-images.githubusercontent.com/35194143/232346948-a25e39e0-81d0-4cd2-acc1-e97a9772503b.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232346966-d58c01fc-ac08-42be-934e-0a1c5397ed8c.png)
 
-Test run 1 with matching locator in the angular project and in the selenium project that makes the test pass
+Test run 1 with matching locator(#angular-material) in the angular project and in the selenium project that makes the test pass
 ![image](https://user-images.githubusercontent.com/35194143/232344657-25a1ea69-b5e4-473e-b17b-65767be4fca9.png)
 
 Test run 2 with a non matching locator in the angular project and in the selenium project and self healing capability switched off. This makes my test fail with element not found exception.
-Id is changed in the Angular project
-![image](https://user-images.githubusercontent.com/35194143/232347082-a8817aff-1cf6-4111-9147-ff706ad58faa.png)   
-![image](https://user-images.githubusercontent.com/35194143/232345348-2610e902-2993-4d53-b01d-63bf72407699.png)  
-![image](https://user-images.githubusercontent.com/35194143/232345408-247cb75b-831d-4bc9-b9b7-57e14f653ea8.png)  
+Id is changed in the Angular project from #angular-material to #react=material
+![image](https://user-images.githubusercontent.com/35194143/232347461-86fe0044-51ea-424d-8f84-bfd24af25793.png)  
+![image](https://user-images.githubusercontent.com/35194143/232347359-28ec0ceb-ca8c-41b5-b36f-61280a58d430.png)  
+![image](https://user-images.githubusercontent.com/35194143/232347447-e66165c3-1cde-4b44-9466-6ddc1917f765.png)  
 
 Test run 3 will trigger self healing capability of healenium which makes my test to pass by fetching the closest matching web locator from PostgreSQL db that contains the snapshot from test run 1  
-The link text in the web locator in my selenium project still points to the original link text of "Angular Material".  
-![image](https://user-images.githubusercontent.com/35194143/232345814-1f0898d0-5682-436f-a380-19598b1c28aa.png)  
-The link text in the web locator in my angular project has been changed to "React Material"  
-![image](https://user-images.githubusercontent.com/35194143/232345920-48adbd58-9fb6-43ce-b9a7-3a161f175e8a.png)  
-![image](https://user-images.githubusercontent.com/35194143/232344885-7fe9b3ae-cdf5-40a4-b165-7ca56f3442d3.png)  
 
 Test passed!  
 ![image](https://user-images.githubusercontent.com/35194143/232345734-14672335-f6a0-4b5f-b808-c5fca9e2a825.png)  
