@@ -43,8 +43,7 @@ Test run 1 with matching locator in the angular project and in the selenium proj
 
 Test run 2 with a non matching locator in the angular project and in the selenium project and self healing capability switched off. This makes my test fail with element not found exception.
 Id is changed in the Angular project
-![image](https://user-images.githubusercontent.com/35194143/232344885-7fe9b3ae-cdf5-40a4-b165-7ca56f3442d3.png)  
-![image](https://user-images.githubusercontent.com/35194143/232344913-b94013a9-1773-4b7b-ab25-244d0f254a26.png)  
+![image](https://user-images.githubusercontent.com/35194143/232347082-a8817aff-1cf6-4111-9147-ff706ad58faa.png)   
 ![image](https://user-images.githubusercontent.com/35194143/232345348-2610e902-2993-4d53-b01d-63bf72407699.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232345408-247cb75b-831d-4bc9-b9b7-57e14f653ea8.png)  
 
@@ -58,7 +57,7 @@ The link text in the web locator in my angular project has been changed to "Reac
 Test passed!  
 ![image](https://user-images.githubusercontent.com/35194143/232345734-14672335-f6a0-4b5f-b808-c5fca9e2a825.png)  
 Screenshot of the healed web element  
-![image](https://user-images.githubusercontent.com/35194143/232346211-f2e4bb23-62c3-42c3-823b-def528fa5708.png)  
+![image](https://user-images.githubusercontent.com/35194143/232347195-f5b458d7-eacc-45f2-83d8-95fc84a04fa4.png)  
 Screenshots of all the healed elements can be found in this folder ..\SeleniumWithSelfHealingCodeGen\infra\screenshots
 
 
