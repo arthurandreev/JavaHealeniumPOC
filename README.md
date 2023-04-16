@@ -48,14 +48,14 @@ Link text is changed in the Angular project
 ![image](https://user-images.githubusercontent.com/35194143/232345348-2610e902-2993-4d53-b01d-63bf72407699.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232345408-247cb75b-831d-4bc9-b9b7-57e14f653ea8.png)  
 
-Test run 3 will trigger self healing capability of healenium makes my test to pass by fetching the closest matching web locator from PostgreSQL db that contains the snapshot from test run 1
-The link text in the web locator in my selenium project still points to the original link text of "Angular Material".
-![image](https://user-images.githubusercontent.com/35194143/232345814-1f0898d0-5682-436f-a380-19598b1c28aa.png)
-The link text in the web locator in my angular project has been changed to "React Material"
+Test run 3 will trigger self healing capability of healenium which makes my test to pass by fetching the closest matching web locator from PostgreSQL db that contains the snapshot from test run 1  
+The link text in the web locator in my selenium project still points to the original link text of "Angular Material".  
+![image](https://user-images.githubusercontent.com/35194143/232345814-1f0898d0-5682-436f-a380-19598b1c28aa.png)  
+The link text in the web locator in my angular project has been changed to "React Material"  
 ![image](https://user-images.githubusercontent.com/35194143/232345920-48adbd58-9fb6-43ce-b9a7-3a161f175e8a.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232344885-7fe9b3ae-cdf5-40a4-b165-7ca56f3442d3.png)  
 
-Test passed!
+Test passed!  
 ![image](https://user-images.githubusercontent.com/35194143/232345734-14672335-f6a0-4b5f-b808-c5fca9e2a825.png)
 
 
