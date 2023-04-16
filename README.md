@@ -56,7 +56,10 @@ The link text in the web locator in my angular project has been changed to "Reac
 ![image](https://user-images.githubusercontent.com/35194143/232344885-7fe9b3ae-cdf5-40a4-b165-7ca56f3442d3.png)  
 
 Test passed!  
-![image](https://user-images.githubusercontent.com/35194143/232345734-14672335-f6a0-4b5f-b808-c5fca9e2a825.png)
+![image](https://user-images.githubusercontent.com/35194143/232345734-14672335-f6a0-4b5f-b808-c5fca9e2a825.png)  
+Screenshot of the healed web element  
+![image](https://user-images.githubusercontent.com/35194143/232346211-f2e4bb23-62c3-42c3-823b-def528fa5708.png)  
+Screenshots of all the healed elements can be found in this folder ..\SeleniumWithSelfHealingCodeGen\infra\screenshots
 
 
 
