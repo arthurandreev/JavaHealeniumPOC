@@ -13,8 +13,8 @@ The test will pass if the element is found, and Healenium will log the updated l
 # Benefits of Healenium
 The main benefit of using Healenium is that it helps reduce the time and effort spent on maintaining and updating UI tests when the application under test undergoes changes in its user interface. 
 By automatically adapting to changes in the UI, Healenium can reduce the number of false-negative test results caused by outdated locators.
-Healenium can be used as a plugin for Java-based Selenium projects and is available on GitHub. It can also be used with .Net projects.
-To use it, you need to add Healenium as a dependency in your project and make some configuration changes. 
+Healenium can be used as a plugin for Java-based Selenium projects and is available on GitHub. It can also be used with other programming languages such as C# and Javascript.
+To use it, you need to add Healenium as a dependency in your project, add small codes changes to your web driver and make some configuration changes. 
 More information and usage instructions can be found in the official documentation: https://healenium.io/
 
 # My setup for this project
