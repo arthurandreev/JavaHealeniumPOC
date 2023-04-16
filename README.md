@@ -22,5 +22,7 @@ I created a starter project in Angular. For the purpose of the demo, I just need
 I need to run my tests at least once against the Angular web page to have Healenium take a snapshot of all the web elements I interact with as part of the test. 
 The snapshot will be saved to a PostgreSQL db which resides in a docker container. This snapshop will be used to find the closest mathing web element for any web locators that are throwing element not found exceptions.
 
+The rest of the setup is coming soon...
+
 
 
