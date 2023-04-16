@@ -18,11 +18,50 @@ To use it, you need to add Healenium as a dependency in your project and make so
 More information and usage instructions can be found in the official documentation: https://healenium.io/
 
 # My setup for this project
+The setup involves three things. A Selenium project, an Angular project to test against and healinium Maven dependency.
+## Angular project
 I created a starter project in Angular. For the purpose of the demo, I just need a simple web page where I can modify web elements to test the self healing capability.
 I need to run my tests at least once against the Angular web page to have Healenium take a snapshot of all the web elements I interact with as part of the test. 
 The snapshot will be saved to a PostgreSQL db which resides in a docker container. This snapshop will be used to find the closest mathing web element for any web locators that are throwing element not found exceptions.
+To setup a starter angular project please follow the steps outlined here - https://angular.io/guide/setup-local
 
-The rest of the setup is coming soon...
+## Selenium Maven Java project
+Just clone down the code here or create your own Selenium Maven Java project.
+
+## Healenium Maven Dependency
+For setup steps that I followed to set it up, please see this link - https://github.com/healenium/healenium-web
+
+# DEMO 
+Use case - a link text that my navigateToAngularMaterialPageTest is using to click on the button that takes me to a new tab has been changed and this will normally make my test fail with no element found exception
+My element under test
+![image](https://user-images.githubusercontent.com/35194143/232344213-9ce1400a-9831-489c-a305-24fcf28f765c.png)
+![image](https://user-images.githubusercontent.com/35194143/232344239-8f48cc08-cf7b-4a97-a828-f43cc3b615a3.png)
+![image](https://user-images.githubusercontent.com/35194143/232344631-0924e59e-0e21-4fef-8a71-a2092030af2f.png)
+
+Test run 1 with matching locator in the angular project and in the selenium project that makes the test pass
+![image](https://user-images.githubusercontent.com/35194143/232344657-25a1ea69-b5e4-473e-b17b-65767be4fca9.png)
+
+Test run 2 with a non matching locator in the angular project and in the selenium project and self healing capability switched off. This makes my test fail with element not found exception.
+Link text is changed in the Angular project
+![image](https://user-images.githubusercontent.com/35194143/232344885-7fe9b3ae-cdf5-40a4-b165-7ca56f3442d3.png)
+![image](https://user-images.githubusercontent.com/35194143/232344913-b94013a9-1773-4b7b-ab25-244d0f254a26.png)
+![image](https://user-images.githubusercontent.com/35194143/232345348-2610e902-2993-4d53-b01d-63bf72407699.png)
+![image](https://user-images.githubusercontent.com/35194143/232345408-247cb75b-831d-4bc9-b9b7-57e14f653ea8.png)
+
+Test run 3 will trigger self healing capability of healenium makes my test to pass by fetching the closest matching web locator from PostgreSQL db that contains the snapshot from test run 1
+The link text in the web locator in my selenium project still points to the original link text of "Angular Material".
+![image](https://user-images.githubusercontent.com/35194143/232345814-1f0898d0-5682-436f-a380-19598b1c28aa.png)
+The link text in the web locator in my angular project has been changed to "React Material"
+![image](https://user-images.githubusercontent.com/35194143/232345920-48adbd58-9fb6-43ce-b9a7-3a161f175e8a.png)
+
+
+Test passed!
+![image](https://user-images.githubusercontent.com/35194143/232345734-14672335-f6a0-4b5f-b808-c5fca9e2a825.png)
+
+
+
+
+
 
 
 
