@@ -2,7 +2,7 @@
 Maven Java Selenium project to showcase self healing code capability powered by healenium docker backend
 
 # Project overview
-This project has been created to showcase the capability of integrating healenium into a Maven Java Selenium project. 
+This project has been created to showcase the capability of integrating healenium library into a Maven Java Selenium project. 
 # What is Healenium
 Healenium is an open-source library that aims to reduce the maintenance efforts required for Selenium-based UI tests by providing self-healing capabilities. 
 It identifies the elements that were not found during test execution and tries to locate them using alternative locators. 
