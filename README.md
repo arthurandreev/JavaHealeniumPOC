@@ -19,7 +19,7 @@ More information and usage instructions can be found in the official documentati
 
 # My setup for this project
 [Prerequisites]  
-Docker, Angular, Selenium, Maven
+Docker, Angular, Selenium, Maven  
 The setup involves three things. A Selenium project, an Angular project to test against and Healenium library imported as a Maven dependency.
 ## Angular project
 I created a starter project in Angular. For the purpose of the demo, I just need a simple web page where I can modify web elements to test the self healing capability.
