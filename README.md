@@ -18,7 +18,9 @@ To use it, you need to add Healenium as a dependency in your project, add small 
 More information and usage instructions can be found in the official documentation: https://healenium.io/
 
 # My setup for this project
-The setup involves three things. A Selenium project, an Angular project to test against and healinium Maven dependency.
+[Prerequisites]  
+Docker, Angular, Selenium, Maven
+The setup involves three things. A Selenium project, an Angular project to test against and Healenium library imported as a Maven dependency.
 ## Angular project
 I created a starter project in Angular. For the purpose of the demo, I just need a simple web page where I can modify web elements to test the self healing capability.
 I need to run my tests at least once against the Angular web page to have Healenium take a snapshot of all the web elements I interact with as part of the test. 
@@ -28,7 +30,7 @@ To setup a starter angular project please follow the steps outlined here - https
 ## Selenium Maven Java project
 Just clone down the code here or create your own Selenium Maven Java project.
 
-## Healenium Maven Dependency
+## Healenium library with Docker
 For setup steps that I followed to set it up, please see this link - https://github.com/healenium/healenium-web
 
 # DEMO 
