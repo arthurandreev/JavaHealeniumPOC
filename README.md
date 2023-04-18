@@ -55,7 +55,7 @@ Id is changed in the Angular project from #angular-material to #react-material
 ![image](https://user-images.githubusercontent.com/35194143/232347461-86fe0044-51ea-424d-8f84-bfd24af25793.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232347359-28ec0ceb-ca8c-41b5-b36f-61280a58d430.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232347447-e66165c3-1cde-4b44-9466-6ddc1917f765.png)  
-Test run 3 has self healing capability switched on which makes my test pass. It does this by fetching the closest matching web locator from PostgreSQL db that contains the snapshot from test run 1 and will find correct web element for the web driver to click on  
+Test run 3 contains the same non matching locator(#angular-material vs #react-material) but has self healing capability switched on which makes my test pass. It does this by fetching the closest matching web locator from PostgreSQL db that contains the snapshot from test run 1 and will find correct web element for the web driver to click on.  
 
 Test passed!  
 ![image](https://user-images.githubusercontent.com/35194143/232345734-14672335-f6a0-4b5f-b808-c5fca9e2a825.png)  
