@@ -8,7 +8,7 @@ Healenium is an open-source library that aims to reduce the maintenance efforts 
 It identifies the elements that were not found during test execution and tries to locate them using alternative locators. 
 Healenium then provides recommendations to update the locator strategy for the elements that were not found.
 When a test fails due to an element not being found, Healenium will search for the element using different attributes or by comparing the element's structure to what it was in the past. 
-If it finds a match, it will update the locator information and re-run the test. 
+If it finds a match, it will update the locator information at run time and proceed with running the test using the updated web locator. 
 The test will pass if the element is found, and Healenium will log the updated locator information for future reference.
 # Benefits of Healenium
 The main benefit of using Healenium is that it helps reduce the time and effort spent on maintaining and updating UI tests when the application under test undergoes changes in its user interface. 
