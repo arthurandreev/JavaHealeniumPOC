@@ -41,8 +41,8 @@ My element under test
 ![image](https://user-images.githubusercontent.com/35194143/232346948-a25e39e0-81d0-4cd2-acc1-e97a9772503b.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232346966-d58c01fc-ac08-42be-934e-0a1c5397ed8c.png)  
 My test case  
-![image](https://user-images.githubusercontent.com/35194143/232719098-8b4f2cb9-4496-487e-83e0-76ca972bceb6.png)  
-![image](https://user-images.githubusercontent.com/35194143/232348050-ba46a18c-b1c5-4926-a6e6-ec939c1c648f.png)  
+![image](https://user-images.githubusercontent.com/35194143/233724460-99fedcc9-0f56-4a95-a93e-c7f9add1064c.png)    
+![image](https://user-images.githubusercontent.com/35194143/233724554-d300aa7d-d7fd-4bb9-bb30-c9b7023013c5.png)  
 
 Test run 1 with matching locator(#angular-material) in the angular project and in the selenium project makes the test pass
 ![image](https://user-images.githubusercontent.com/35194143/232344657-25a1ea69-b5e4-473e-b17b-65767be4fca9.png)    
