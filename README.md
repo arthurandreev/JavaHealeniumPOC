@@ -42,7 +42,7 @@ My element under test
 ![image](https://user-images.githubusercontent.com/35194143/232346966-d58c01fc-ac08-42be-934e-0a1c5397ed8c.png)  
 My test case  
 ![image](https://user-images.githubusercontent.com/35194143/233724460-99fedcc9-0f56-4a95-a93e-c7f9add1064c.png)    
-![image](https://user-images.githubusercontent.com/35194143/233724554-d300aa7d-d7fd-4bb9-bb30-c9b7023013c5.png)  
+![image](https://user-images.githubusercontent.com/35194143/233773830-b9c1ab70-b8cc-4aa1-becd-1e56028aad6e.png)  
 
 Test run 1 with matching locator(#angular-material) in the angular project and in the selenium project makes the test pass
 ![image](https://user-images.githubusercontent.com/35194143/232344657-25a1ea69-b5e4-473e-b17b-65767be4fca9.png)    
