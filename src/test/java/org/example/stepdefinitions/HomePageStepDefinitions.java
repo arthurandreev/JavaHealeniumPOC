@@ -13,12 +13,10 @@ import java.time.Duration;
 import java.util.ArrayList;
 
     public class HomePageStepDefinitions {
-
-        HomePage homePage;
         SelfHealingDriver driver = CucumberHooks.driver;
+        HomePage homePage = new HomePage(driver);
         @Given("the user is on the Home page")
         public void theUserIsOnTheHomePage() {
-            homePage = new HomePage(driver);
             driver.navigate().to("http://localhost:4200/");
         }
 
