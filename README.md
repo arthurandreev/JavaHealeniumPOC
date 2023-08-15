@@ -1,5 +1,5 @@
 # SeleniumWithSelfHealingCode
-Maven Java Selenium project to showcase self healing code capability powered by healenium docker backend
+Java Selenium project to showcase self healing code capability powered by healenium docker backend
 
 # Project overview
 This project has been created to showcase the capability of integrating Healenium library into a Maven Java Selenium project. 
