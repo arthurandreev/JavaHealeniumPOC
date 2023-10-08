@@ -25,7 +25,14 @@ The setup involves three things. A Selenium project, an Angular project to test 
 I created a starter project in Angular. For the purpose of the demo, I just need a simple web page where I can modify web elements to test the self healing capability.
 I need to run my tests at least once against the Angular web page to have Healenium take a snapshot of all the web elements I interact with as part of the test. 
 The snapshot will be saved to a PostgreSQL db which resides in a docker container. This snapshop will be used to find the closest mathing web element for any web locators that are throwing element not found exceptions.
-To setup a starter angular project please follow the steps outlined here - https://angular.io/guide/setup-local
+I followed the steps outlined here to set up my angular application under test - https://angular.io/guide/setup-local
+
+The only thing I added to the starter project provided is the following id which I will be using to locate a button to click on. The id can be found in the app.component.html class in the my-angular.app project.
+ <a class="card" target="_blank" rel="noopener" href="https://material.angular.io" id="angular-material">
+      <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px" width="21.813" height="23.453" viewBox="0 0 179.2 192.7"><path fill="#ffa726" d="M89.4 0 0 32l13.5 118.4 75.9 42.3 76-42.3L179.2 32 89.4 0z"/><path fill="#fb8c00" d="M89.4 0v192.7l76-42.3L179.2 32 89.4 0z"/><path fill="#ffe0b2" d="m102.9 146.3-63.3-30.5 36.3-22.4 63.7 30.6-36.7 22.3z"/><path fill="#fff3e0" d="M102.9 122.8 39.6 92.2l36.3-22.3 63.7 30.6-36.7 22.3z"/><path fill="#fff" d="M102.9 99.3 39.6 68.7l36.3-22.4 63.7 30.6-36.7 22.4z"/></svg>
+      <span>Angular Material</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </a>
 
 ## Selenium Maven Java project
 Just clone down the code here or create your own Selenium Maven Java project.
