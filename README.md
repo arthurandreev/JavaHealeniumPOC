@@ -41,9 +41,18 @@ The only thing I added to the starter project provided is the following id which
 Just clone down the code here or create your own Selenium Maven Java project.
 
 ## Healenium library with Docker
-For setup steps that I followed to set it up, please see this link - https://github.com/healenium/healenium-web
+For setup steps that I followed to set it up, check out these links below
+Maven dependency - https://github.com/healenium/healenium-web
+Docker containers - https://github.com/healenium/healenium-backend
 
 # DEMO 
+
+To run the project, all you need to do is to clone down this repository. Then navigate to my-angular.app folder and run the following command to start Angular dev server:
+
+```
+ng serve --open
+```
+
 [Use case]  
 The id that my navigateToAngularMaterialPageTest is using to click on the button that takes me to a new tab has been changed and this will normally make my test fail with no element found exception. The web element itself hasn't changed but because the id has been changed it will make the tests that rely on it to fail resulting in false positive failed tests.  
 My element under test
