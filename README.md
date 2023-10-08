@@ -49,7 +49,13 @@ Docker containers - https://github.com/healenium/healenium-backend
 
 # DEMO 
 
-To run the project, all you need to do is to clone down this repository. Then navigate to my-angular.app folder and run the following command to start Angular dev server:
+To build and run the project, you need to do the following steps:
+
+Clone down the solution to your local machine. Note the solution contains two projects. Angular application and Selenium test project.
+
+### Build and run Angualar
+
+Navigate to my-angular.app folder and run the following command in the terminal to start Angular dev server on localhost http://localhost:4200
 
 ```
 ng serve --open
@@ -60,6 +66,28 @@ The command "ng serve --open" is used in Angular development to start a local de
 2. **--open:** This flag is an optional parameter that instructs the Angular CLI to automatically open a web browser. When you run "ng serve --open," it launches a default web browser, which then loads your Angular app.
 ```
 
+Upon successfull build of the Angualr application, you should see the following page on http://localhost:4200/
+![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/1fd2a712-a8c9-47b8-8717-050ce99e3cbb)
+
+### Download docker images and spin up containers required for Healenium
+
+Navigate to infra folder in the JavaHealeniumPOC in the terminal and run the following command to download images and spin up containers
+
+infra folder is found here and must contain docker compose file
+![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/e5ad09d3-e96a-4f91-8ce5-9cb3ada9de49)
+
+docker command to run 
+```
+docker-compose up -d
+
+The Docker command "docker-compose up -d" is used to start containers defined in a Docker Compose configuration file in detached mode. Here's a brief explanation:
+
+1. **docker-compose:** This command is part of Docker Compose, a tool for defining and running multi-container Docker applications. It reads the configuration from a "docker-compose.yml" file in your project directory.
+
+2. **up:** The "up" command tells Docker Compose to create and start containers defined in the Compose file. It ensures that your defined services, networks, and volumes are launched and configured as specified in the Compose configuration.
+
+3. **-d:** The "-d" flag stands for "detached" mode. When you use this flag, Docker Compose starts the containers in the background, and the command prompt is returned to you immediately. This means you can continue using the terminal for other tasks without being attached to the container's logs.
+```
 
 [Use case]  
 The id that my navigateToAngularMaterialPageTest is using to click on the button that takes me to a new tab has been changed and this will normally make my test fail with no element found exception. The web element itself hasn't changed but because the id has been changed it will make the tests that rely on it to fail resulting in false positive failed tests.  
