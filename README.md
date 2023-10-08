@@ -41,8 +41,10 @@ The only thing I added to the starter project provided is the following id which
 Just clone down the code here or create your own Selenium Maven Java project.
 
 ## Healenium library with Docker
-For setup steps that I followed to set it up, check out these links below
+For setup steps that I followed to set it up, check out these links below:
+
 Maven dependency - https://github.com/healenium/healenium-web
+
 Docker containers - https://github.com/healenium/healenium-backend
 
 # DEMO 
@@ -51,6 +53,13 @@ To run the project, all you need to do is to clone down this repository. Then na
 
 ```
 ng serve --open
+The command "ng serve --open" is used in Angular development to start a local development server and automatically open a web browser to preview your Angular application. Here's a brief explanation:
+
+1. **ng serve:** This part of the command is used to start the Angular CLI's development server. It compiles your Angular application's code, bundles it, and makes it available for testing and development.
+
+2. **--open:** This flag is an optional parameter that instructs the Angular CLI to automatically open a web browser. When you run "ng serve --open," it launches a default web browser, which then loads your Angular app. This makes it convenient for developers to quickly see the changes they make to the application in real-time as they code.
+
+In essence, "ng serve --open" is a time-saving command in Angular development. It simplifies the process of starting the development server and immediately visualizing your application in a web browser, allowing developers to iterate and test their code efficiently.
 ```
 
 [Use case]  
