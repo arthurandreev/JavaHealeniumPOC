@@ -99,8 +99,6 @@ To verify that you have all the expected containers running successfuly you can 
 Alternatily open docker desktop and navigate to containers where you should see the following list of running containers under infra
 ![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/82c0d1d3-966d-4e8e-abde-fd082ccf6a73)
 
-
-
 ### Use case
 The id that my navigateToAngularMaterialPageTest is using to click on the button that takes me to a new tab has been changed and this will normally make my test fail with no element found exception. The web element itself hasn't changed but because the id has been changed it will make the tests that rely on it to fail resulting in false positive failed tests.  
 My element under test
