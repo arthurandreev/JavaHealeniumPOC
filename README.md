@@ -101,7 +101,7 @@ Alternatily open docker desktop and navigate to containers where you should see 
 
 
 
-###[Use case]  
+### Use case
 The id that my navigateToAngularMaterialPageTest is using to click on the button that takes me to a new tab has been changed and this will normally make my test fail with no element found exception. The web element itself hasn't changed but because the id has been changed it will make the tests that rely on it to fail resulting in false positive failed tests.  
 My element under test
 ![image](https://user-images.githubusercontent.com/35194143/232344213-9ce1400a-9831-489c-a305-24fcf28f765c.png)  
