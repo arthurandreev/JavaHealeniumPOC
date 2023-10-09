@@ -9,21 +9,21 @@ Below you will find information on how to build and run the project. You will al
 
 # Project overview
 This project has been created to showcase the capability of integrating Healenium library into a Maven Java Selenium project. 
-# What is Healenium
+## What is Healenium
 Healenium is an open-source library that aims to reduce the maintenance efforts required for Selenium-based UI tests by providing self-healing capabilities. 
 It identifies the elements that were not found during test execution and tries to locate them using alternative locators. 
 Healenium then provides recommendations to update the locator strategy for the elements that were not found.
 When a test fails due to an element not being found, Healenium will search for the element using different attributes or by comparing the element's structure to what it was in the past. 
 If it finds a match, it will update the locator information at run time and proceed with running the test using the updated web locator. 
 The test will pass if the element is found, and Healenium will log the updated locator information for future reference.
-# Benefits of Healenium
+## Benefits of Healenium
 The main benefit of using Healenium is that it helps reduce the time and effort spent on maintaining and updating UI tests when the application under test undergoes changes in its user interface. 
 By automatically adapting to changes in the UI, Healenium can reduce the number of false-negative test results caused by outdated locators.
 Healenium can be used as a plugin for Java-based Selenium projects and is available on GitHub. It can also be used with other programming languages such as C# and Javascript.
 To use it, you need to add Healenium as a dependency in your project, add small codes changes to your web driver and make some configuration changes. 
 More information and usage instructions can be found in the official documentation: https://healenium.io/
 
-# My setup for this project
+## My setup for this project
 [Prerequisites]  
 Docker, Angular, Selenium, Maven, Cucumber BDD framework  
 The setup involves three things. A Selenium project, an Angular project to test against and Healenium library imported as a Maven dependency.
@@ -58,7 +58,7 @@ To build and run the project, you need to do the following steps:
 
 Clone down the solution to your local machine. Note the solution contains two projects. Angular application and Selenium test project.
 
-### Build and run Angular app
+## Build and run Angular app
 
 Navigate to my-angular.app folder and run the following command in the terminal to start Angular dev server on localhost http://localhost:4200
 
@@ -74,7 +74,7 @@ The command "ng serve --open" is used in Angular development to start a local de
 Upon successfull build of the Angualr application, you should see the following page on http://localhost:4200/
 ![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/1fd2a712-a8c9-47b8-8717-050ce99e3cbb)
 
-### Download docker images and spin up docker containers required for Healenium
+## Download docker images and spin up docker containers required for Healenium
 
 Navigate to infra folder in the JavaHealeniumPOC in the terminal and run the following command to download images and spin up containers
 
