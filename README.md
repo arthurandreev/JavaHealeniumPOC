@@ -3,12 +3,13 @@
 # Intro
 I have come across a machine learning powered library called Healenium that integrates seamlessly with Selemium and solves a major test automation headache of regression tests failling due to small changes in web locators. 
 
-This is a proof of concept project to showcase machine learning capability that can be integrated into a Selenium Java project. These capabilities are provided by an open source project called Healenium. Healenium is language agnostic and can be used with other languages such as C#. I have another POC project which I built with C# and dotnet technologies. It is called MLPoweredSeleniumDotNetPOC and you can find it in my pinned repositories.
-
 Below you will find information on how to build and run the project. You will also find explanations on key components and code blocks in the project. 
 
 # Project overview
 This project has been created to showcase the capability of integrating Healenium library into a Maven Java Selenium project. 
+
+This is a proof of concept project to showcase machine learning capability that can be integrated into a Selenium Java project. These capabilities are provided by an open source project called Healenium. Healenium is language agnostic and can be used with other languages such as C#. I have another POC project which I built with C# and dotnet technologies. It is called MLPoweredSeleniumDotNetPOC and you can find it in my pinned repositories.
+
 ## What is Healenium
 Healenium is an open-source library that aims to reduce the maintenance efforts required for Selenium-based UI tests by providing self-healing capabilities. 
 It identifies the elements that were not found during test execution and tries to locate them using alternative locators. 
