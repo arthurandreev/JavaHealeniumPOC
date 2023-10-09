@@ -1,6 +1,11 @@
 # MLPoweredSeleniumJavaPOC
-Java Selenium project to showcase self healing code capability powered by healenium docker backend
+
+# Intro
+I have come across a machine learning powered library called Healenium that integrates seamlessly with Selemium and solves a major test automation headache of regression tests failling due to small changes in web locators. 
+
 This is a proof of concept project to showcase machine learning capability that can be integrated into a Selenium Java project. These capabilities are provided by an open source project called Healenium. Healenium is language agnostic and can be used with other languages such as C#. I have another demo project which I built with C# and dotnet technologies. You can find it in my pinned repositories.
+
+Below you will find information on how to build and run the project. You will also find explanations on key components and code blocks in the project. 
 
 # Project overview
 This project has been created to showcase the capability of integrating Healenium library into a Maven Java Selenium project. 
