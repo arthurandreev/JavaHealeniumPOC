@@ -13,35 +13,64 @@ This proof of concept project showcases the integration of Healenium into a Mave
 
 # Table of Contents
 - [How to Install and Run the Project](#how-to-install-and-run-the-project)
-- [How to Use the Project - Demo](#how-to-use-the-project-demo)
+- [How to Use the Project](#how-to-use-the-project-demo)
+- [DEMO](#DEMO)
 
 # How to Install and Run the Project
 To install and run the project, follow these steps:
 
-1. Clone the project to your local machine, which includes both an Angular application and a Selenium test project with Healenium Maven package already installed. The project also contains a Docker compose file with all the configurations required to spin up the Healenium containers. More information on the Healenium can be found in the links below.
+Clone down the solution to your local machine. Note the solution contains two projects. Angular application and Selenium test project. Healenium is already installed as a Maven dependency. You will need to spin up containers that contain Healenium backend. See instructions below on how to do that. 
 
-Maven dependency - https://github.com/healenium/healenium-web <br>
-Docker containers - https://github.com/healenium/healenium-backend
+Healenium consists of a Maven Healenium dependency and docker backend. More information on these components can be found below:
 
-## Build and Run Angular App
-2. Navigate to the "my-angular.app" folder.
-3. Run the following command in the terminal to start the Angular development server on localhost: [http://localhost:4200](http://localhost:4200).
+Maven dependency <br>
+https://github.com/healenium/healenium-web <br>
+https://mvnrepository.com/artifact/com.epam.healenium/healenium-web
 
-```
+Docker backend <br>
+https://github.com/healenium/healenium-backend <br>
+https://hub.docker.com/search?q=healenium
+
+## Build and run Angular app
+
+Navigate to my-angular.app folder and run the following command in the terminal to start Angular dev server on localhost http://localhost:4200
+
+```shell
 ng serve --open
+The command "ng serve --open" is used in Angular development to start a local development server and automatically open a web browser to preview your Angular application. Here's a brief explanation:
+
+1. **ng serve:** This part of the command is used to start the Angular CLI's development server. It compiles your Angular application's code, bundles it, and makes it available for testing and development.
+
+2. **--open:** This flag is an optional parameter that instructs the Angular CLI to automatically open a web browser. When you run "ng serve --open," it launches a default web browser, which then loads your Angular app.
 ```
 
-The `ng serve --open` command launches the Angular development server and automatically opens a web browser for previewing the Angular application.
+Upon successfull build of the Angular application, you should see the following page on http://localhost:4200/
+![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/1fd2a712-a8c9-47b8-8717-050ce99e3cbb)
 
-## Download Docker Images and Start Containers
-4. Use command prompt or a terminal inside your IDE, navigate to the "infra" folder within the "JavaHealeniumPOC" project. Docker compose file is located in the infra folder.
-5. Run the following command in the terminal to download Docker images and spin up the required containers:
+## Download docker images and spin up docker containers required for Healenium
 
-```
+Navigate to infra folder in the JavaHealeniumPOC in the terminal and run the following command to download images and spin up containers
+
+infra folder is found here and must contain docker compose file
+![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/e5ad09d3-e96a-4f91-8ce5-9cb3ada9de49)
+
+docker command to run 
+```shell
 docker-compose up -d
-```
 
-This command starts Docker containers defined in the Docker Compose configuration file in detached mode, allowing the containers to run in the background.
+The Docker command "docker-compose up -d" is used to start containers defined in a Docker Compose configuration file in detached mode. Here's a brief explanation:
+
+1. **docker-compose:** This command is part of Docker Compose, a tool for defining and running multi-container Docker applications. It reads the configuration from a "docker-compose.yml" file in your project directory.
+
+2. **up:** The "up" command tells Docker Compose to create and start containers defined in the Compose file. It ensures that your defined services, networks, and volumes are launched and configured as specified in the Compose configuration.
+
+3. **-d:** The "-d" flag stands for "detached" mode. When you use this flag, Docker Compose starts the containers in the background, and the command prompt is returned to you immediately. This means you can continue using the terminal for other tasks without being attached to the container's logs.
+```
+To verify that you have all the expected containers running successfuly you can run "docker ps" command in the terminal and see the following output
+![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/68606a41-5e5f-4e3b-a4b4-d939fba45ef1)
+
+Alternatily open docker desktop and navigate to containers where you should see the following list of running containers under infra
+![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/82c0d1d3-966d-4e8e-abde-fd082ccf6a73)
 
 # How to Use the Project
 The POC demonstrates how Healenium can handle changes in web locators to prevent test failures.
@@ -59,52 +88,7 @@ Healenium offers a valuable solution for Selenium automation projects, significa
 
 # DEMO 
 
-To build and run the project, you need to do the following steps:
-
-Clone down the solution to your local machine. Note the solution contains two projects. Angular application and Selenium test project.
-
-## Build and run Angular app
-
-Navigate to my-angular.app folder and run the following command in the terminal to start Angular dev server on localhost http://localhost:4200
-
-```shell
-ng serve --open
-The command "ng serve --open" is used in Angular development to start a local development server and automatically open a web browser to preview your Angular application. Here's a brief explanation:
-
-1. **ng serve:** This part of the command is used to start the Angular CLI's development server. It compiles your Angular application's code, bundles it, and makes it available for testing and development.
-
-2. **--open:** This flag is an optional parameter that instructs the Angular CLI to automatically open a web browser. When you run "ng serve --open," it launches a default web browser, which then loads your Angular app.
-```
-
-Upon successfull build of the Angualr application, you should see the following page on http://localhost:4200/
-![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/1fd2a712-a8c9-47b8-8717-050ce99e3cbb)
-
-## Download docker images and spin up docker containers required for Healenium
-
-Navigate to infra folder in the JavaHealeniumPOC in the terminal and run the following command to download images and spin up containers
-
-infra folder is found here and must contain docker compose file
-![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/e5ad09d3-e96a-4f91-8ce5-9cb3ada9de49)
-
-docker command to run 
-```
-docker-compose up -d
-
-The Docker command "docker-compose up -d" is used to start containers defined in a Docker Compose configuration file in detached mode. Here's a brief explanation:
-
-1. **docker-compose:** This command is part of Docker Compose, a tool for defining and running multi-container Docker applications. It reads the configuration from a "docker-compose.yml" file in your project directory.
-
-2. **up:** The "up" command tells Docker Compose to create and start containers defined in the Compose file. It ensures that your defined services, networks, and volumes are launched and configured as specified in the Compose configuration.
-
-3. **-d:** The "-d" flag stands for "detached" mode. When you use this flag, Docker Compose starts the containers in the background, and the command prompt is returned to you immediately. This means you can continue using the terminal for other tasks without being attached to the container's logs.
-```
-To verify that you have all the expected containers running successfuly you can run "docker ps" command in the terminal and see the following output
-![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/68606a41-5e5f-4e3b-a4b4-d939fba45ef1)
-
-Alternatily open docker desktop and navigate to containers where you should see the following list of running containers under infra
-![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/82c0d1d3-966d-4e8e-abde-fd082ccf6a73)
-
-### Use case
+## Use case - change in an id used to locate a button breaks a test
 The id that my navigateToAngularMaterialPageTest is using to click on the button that takes me to a new tab has been changed and this will normally make my test fail with no element found exception. The web element itself hasn't changed but because the id has been changed it will make the tests that rely on it to fail resulting in false positive failed tests. 
 
 To simulate this scenario, firstly you need to run the test at least once when it passes to enable Healenium to save a snapshot of the elements on the page to a Postgres DB. In this scenario the web locators in the Selenium project and the angular application must match. This baseline snapshot image will be used in subsequent test runs to heal elements that face element not found exceptions. 
