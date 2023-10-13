@@ -20,9 +20,8 @@ To install and run the project, follow these steps:
 
 1. Clone the project to your local machine, which includes both an Angular application and a Selenium test project with Healenium Maven package already installed. The project also contains a Docker compose file with all the configurations required to spin up the Healenium backend. More information on the Healenium backend can be found in the links below.
 
-## Healenium backend
-Maven dependency - https://github.com/healenium/healenium-web
-
+Healenium backend <br>
+Maven dependency - https://github.com/healenium/healenium-web <br>
 Docker containers - https://github.com/healenium/healenium-backend
 
 ## Build and Run Angular App
