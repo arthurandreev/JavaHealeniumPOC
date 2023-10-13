@@ -67,7 +67,7 @@ Clone down the solution to your local machine. Note the solution contains two pr
 
 Navigate to my-angular.app folder and run the following command in the terminal to start Angular dev server on localhost http://localhost:4200
 
-```
+```shell
 ng serve --open
 The command "ng serve --open" is used in Angular development to start a local development server and automatically open a web browser to preview your Angular application. Here's a brief explanation:
 
