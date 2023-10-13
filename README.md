@@ -153,7 +153,7 @@ My test case
 ![image](https://user-images.githubusercontent.com/35194143/233724460-99fedcc9-0f56-4a95-a93e-c7f9add1064c.png)    
 ![image](https://user-images.githubusercontent.com/35194143/233773830-b9c1ab70-b8cc-4aa1-becd-1e56028aad6e.png)  
 
-## Test case 1 
+## Scenario 1 
 ### Matching locator(#angular-material in both Angular and Selenium). Test passes.
 
 ![image](https://user-images.githubusercontent.com/35194143/232344657-25a1ea69-b5e4-473e-b17b-65767be4fca9.png)    
@@ -164,7 +164,7 @@ Selenium
 Docker  
 ![image](https://user-images.githubusercontent.com/35194143/233727440-ba546c39-1daf-428f-b8cf-803c576a5b52.png)  
 
-## Test case 2
+## Scenario 2
 ### Non matching locator(#react-material in Angular vs #angular-material in Selenium) AND self healing capability is switched OFF. Test fails with no such element exception.
 
 Id is changed in the Angular project from #angular-material to #react-material
@@ -172,7 +172,7 @@ Id is changed in the Angular project from #angular-material to #react-material
 ![image](https://user-images.githubusercontent.com/35194143/232347359-28ec0ceb-ca8c-41b5-b36f-61280a58d430.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232347447-e66165c3-1cde-4b44-9466-6ddc1917f765.png)  
 
-## Test case 3 
+## Scenario 3 
 ### Non matching locator(#react-material in Angular vs #angular-material in Selenium) AND self healing capability is switched ON. Test passes.
 
 ![image](https://user-images.githubusercontent.com/35194143/232345734-14672335-f6a0-4b5f-b808-c5fca9e2a825.png)  
