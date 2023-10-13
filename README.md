@@ -190,7 +190,6 @@ More information on how to wrap WebDriver with Healenium can be found in WebDriv
 
 More information on Healenium can be found here - https://healenium.io/docs/how_healenium_works <br>
 More information on the LSC algorithm can be found here - https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/ 
-
 Last thing to note is that Healenium needs a healenium.properties file in your solution where you configure its settings. Below is the healenium.properties file I have in my solution with explanation of each line.  
 ![image](https://user-images.githubusercontent.com/35194143/232717543-50ff96b5-bc21-43b6-995d-f5e124f1f4d1.png)
 - recovery-tries=1: This line indicates the number of attempts Healenium should make to locate a missing element using its self-healing mechanism.  
