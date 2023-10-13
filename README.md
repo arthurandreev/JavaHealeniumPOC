@@ -27,7 +27,7 @@ Docker containers - https://github.com/healenium/healenium-backend
 2. Navigate to the "my-angular.app" folder.
 3. Run the following command in the terminal to start the Angular development server on localhost: [http://localhost:4200](http://localhost:4200).
 
-```shell
+```
 ng serve --open
 ```
 
@@ -79,7 +79,7 @@ public class HomePage {
 }
 ```
 
-Angualr project
+Angular project
 ```
  <a class="card" target="_blank" rel="noopener" href="https://material.angular.io" id="angular-material">
       <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px" width="21.813" height="23.453" viewBox="0 0 179.2 192.7"><path fill="#ffa726" d="M89.4 0 0 32l13.5 118.4 75.9 42.3 76-42.3L179.2 32 89.4 0z"/><path fill="#fb8c00" d="M89.4 0v192.7l76-42.3L179.2 32 89.4 0z"/><path fill="#ffe0b2" d="m102.9 146.3-63.3-30.5 36.3-22.4 63.7 30.6-36.7 22.3z"/><path fill="#fff3e0" d="M102.9 122.8 39.6 92.2l36.3-22.3 63.7 30.6-36.7 22.3z"/><path fill="#fff" d="M102.9 99.3 39.6 68.7l36.3-22.4 63.7 30.6-36.7 22.4z"/></svg>
