@@ -184,7 +184,7 @@ Verify that the element has been healed successfully by navigating to http://loc
 
 With the standard Selenium implementation my test will fail in this scenario. With Healenium wrapper on top of WebDriver, it catches NoSuchElement exception, triggers the LSC algorithm, passes the current page state, gets previous successful locator path, compares them, and generates the list of healed locators. From this list, Healenium selects the locator with the highest score and proceeds to perform an action using this locator. Upon test completion, Healenium compiles a comprehensive report. This report contains detailed information about the healed locator, includes a screenshot illustrating the successful healing process, and offers a feedback button for users to provide insights on the healing success.
 
-More information on Healenium can be found here - https://healenium.io/docs/how_healenium_works 
+More information on Healenium can be found here - https://healenium.io/docs/how_healenium_works <br>
 More information on the LSC algorithm can be found here - https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/ 
 
 Last thing to note is that Healenium needs a healenium.properties file in your solution where you configure its settings. Below is the healenium.properties file I have in my solution with explanation of each line.  
