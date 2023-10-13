@@ -12,6 +12,8 @@ This proof of concept project showcases the integration of Healenium into a Mave
 - **Setup**: The project combines a Selenium project, an Angular project to test, and Healenium as a Maven dependency.
 
 # Table of Contents
+- [Project Description](#Project-Description)
+- [Key Points](#Key-Points)
 - [How to Install and Run the Project](#how-to-install-and-run-the-project)
 - [How to Use the Project](#how-to-use-the-project-demo)
 - [DEMO](#DEMO)
