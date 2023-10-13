@@ -167,7 +167,7 @@ Id is changed in the Angular project from #angular-material to #react-material
 ![image](https://user-images.githubusercontent.com/35194143/232347461-86fe0044-51ea-424d-8f84-bfd24af25793.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232347359-28ec0ceb-ca8c-41b5-b36f-61280a58d430.png)  
 ![image](https://user-images.githubusercontent.com/35194143/232347447-e66165c3-1cde-4b44-9466-6ddc1917f765.png)  
-### Test run 3 contains the same non matching locator(#angular-material vs #react-material) but has self healing capability switched on which makes my test pass. 
+### Test run 3 contains the same non matching locator(#angular-material in the Selenium test project vs #react-material in the Angular project) but has self healing capability switched on which makes my test pass. 
 
 It does this by fetching the closest matching web locator from PostgreSQL db that contains the snapshot from test run 1 and finds correct web element for the web driver to click on. Healenium needs a healenium.properties file in your solution to configure its settings. Below is the healenium.properties file I have in my solution with explanation of each line.  
 ![image](https://user-images.githubusercontent.com/35194143/232717543-50ff96b5-bc21-43b6-995d-f5e124f1f4d1.png)
