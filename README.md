@@ -182,7 +182,10 @@ Screenshots of all the healed elements can be found in this folder ..\SeleniumWi
 Verify that the element has been healed successfully by navigating to http://localhost:7878/healenium/report/ where you will see the following report along with a screenshot of the healed web element
 ![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/03148051-ce83-4276-b6c7-3bbaf77297a8)
 
-With the standard Selenium implementation my test will fail in this scenario. With Healenium wrapper on top of WebDriver, it catches NoSuchElement exception, triggers the LSC algorithm, passes the current page state, gets previous successful locator path, compares them, and generates the list of healed locators. From this list, Healenium selects the locator with the highest score and proceeds to perform an action using this locator. Upon test completion, Healenium compiles a comprehensive report. This report contains detailed information about the healed locator, includes a screenshot illustrating the successful healing process, and offers a feedback button for users to provide insights on the healing success.
+With the standard Selenium implementation my test will fail in this scenario. With Healenium wrapper on top of WebDriver, it catches NoSuchElement exception, triggers the LSC algorithm, passes the current page state, gets previous successful locator path, compares them, and generates the list of healed locators. From this list, Healenium selects the locator with the highest score and proceeds to perform an action using this locator. Upon test completion, Healenium compiles a comprehensive report. This report contains detailed information about the healed locator, includes a screenshot illustrating the successful healing process, and offers a feedback button for users to provide insights on the healing success. 
+
+More information on how to wrap WebDriver with Healenium can be found in WebDriverFactory class
+![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/740f7119-258e-4410-827c-f789945cd428)
 
 More information on Healenium can be found here - https://healenium.io/docs/how_healenium_works <br>
 More information on the LSC algorithm can be found here - https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/ 
