@@ -18,7 +18,11 @@ This proof of concept project showcases the integration of Healenium into a Mave
 # How to Install and Run the Project
 To install and run the project, follow these steps:
 
-1. Clone the project to your local machine, which includes both the Angular application and Selenium test project.
+1. Clone the project to your local machine, which includes both an Angular application and a Selenium test project with Healenium Maven package already installed. The project also contains a Docker compose file with all the configurations required to spin up the Healenium backend. More information on the Healenium backend can be found in the links below.
+
+## Healenium backend
+Maven dependency - https://github.com/healenium/healenium-web
+Docker containers - https://github.com/healenium/healenium-backend
 
 ## Build and Run Angular App
 2. Navigate to the "my-angular.app" folder.
@@ -31,10 +35,10 @@ ng serve --open
 The `ng serve --open` command launches the Angular development server and automatically opens a web browser for previewing the Angular application.
 
 ## Download Docker Images and Start Containers
-4. Navigate to the "infra" folder within the "JavaHealeniumPOC" project.
+4. Use command prompt or a terminal inside your IDE, navigate to the "infra" folder within the "JavaHealeniumPOC" project. Docker compose file is located in the infra folder.
 5. Run the following command in the terminal to download Docker images and spin up the required containers:
 
-```shell
+```
 docker-compose up -d
 ```
 
