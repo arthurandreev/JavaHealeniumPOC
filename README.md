@@ -54,7 +54,7 @@ Upon successfull build of the Angular application, you should see the following 
 
 Navigate to infra folder in the JavaHealeniumPOC in the terminal and run the following command to download images and spin up containers
 
-infra folder is found here and must contain docker compose file
+infra folder is found here where docker compose file is located
 ![image](https://github.com/arthurandreev/MLPoweredSeleniumJavaPOC/assets/35194143/e5ad09d3-e96a-4f91-8ce5-9cb3ada9de49)
 
 docker command to run 
