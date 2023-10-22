@@ -16,8 +16,8 @@ This proof of concept project showcases the integration of Healenium into a Mave
 - [Key Points](#Key-Points)
 - [How to Install and Run the Project](#how-to-install-and-run-the-project)
 - [How to Use the Project](#how-to-use-the-project-demo)
-- [Summary](#Summary)
 - [DEMO](#DEMO)
+- [Summary](#Summary)
 
 # How to Install and Run the Project
 To install and run the project, follow these steps:
@@ -86,9 +86,6 @@ The POC demonstrates how Healenium can handle changes in web locators to prevent
 3. Run the test with the changed locator to observe how the self-healing capability works. With Healenium enabled, the test should pass by healing the web element locator.
 
 4. You can verify the self-healing by visiting [http://localhost:7878/healenium/report/](http://localhost:7878/healenium/report/), where you'll find a report and a screenshot of the healed web element.
-
-# Summary
-Healenium offers a valuable solution for Selenium automation projects, significantly reducing maintenance work and addressing the common issue of failing regression tests due to minor web locator changes. It's a powerful tool for making your test automation more robust and efficient, allowing you to focus on creating tests for new features rather than constantly fixing failing regression tests. Explore Healenium further to harness its full capabilities and enhance your test automation processes.
 
 # DEMO 
 
@@ -199,4 +196,7 @@ Last thing to note is that Healenium needs a healenium.properties file in your s
 - heal-enabled=true: This line enables or disables Healenium's self-healing feature. When set to true, Healenium's self-healing capabilities will be active.  
 - serverHost=localhost: This line specifies the server host for the Healenium backend service. In this case, it is set to localhost, meaning the service will run on the same machine as the tests.  
 - serverPort=7878: This line defines the port on which the Healenium backend service will listen. Here, it is set to port 7878.  
-- imitatePort=8000: This line sets the port used for communication between the Healenium backend service and the client (Selenium tests). In this case, it is set to port 8000.  
+- imitatePort=8000: This line sets the port used for communication between the Healenium backend service and the client (Selenium tests). In this case, it is set to port 8000.
+
+# Summary
+Healenium offers a valuable solution for Selenium automation projects, significantly reducing maintenance work and addressing the common issue of failing regression tests due to minor web locator changes. It's a powerful tool for making your test automation more robust and efficient, allowing you to focus on creating tests for new features rather than constantly fixing failing regression tests. Explore Healenium further to harness its full capabilities and enhance your test automation processes.
